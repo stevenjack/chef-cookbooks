@@ -6,7 +6,7 @@
 include_recipe 'clone_repo'
 
 git 'responsive news' do
-  repository '#{node[:clone_repo][:github]}/responsive-news.git'
+  repository "#{node[:clone_repo][:github]}/responsive-news.git"
 
   depth 1
   destination '/mnt/hgfs/workspace'
