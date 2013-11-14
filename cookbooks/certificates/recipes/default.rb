@@ -3,15 +3,6 @@
 # Recipe:: default
 #
 
-case node['hostname']
-when 'pal.sandbox'
-  include_attribute 'certificates::pal'
-when 'sandbox.bbc.co.uk'
-  include_attribute 'certificates::aws'
-else
-  include_attribute 'certificates::default'
-end
-
 node[:certificates][:locations].each do |location|
   file location do
     content node[:developer_certificate]
