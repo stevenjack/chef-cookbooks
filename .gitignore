@@ -7,3 +7,6 @@
 # sensitive
 id_rsa
 *.pem
+
+# vagrant
+.vagrant
