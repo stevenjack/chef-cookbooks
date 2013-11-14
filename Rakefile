@@ -3,7 +3,7 @@
 require 'foodcritic'
 require 'rspec/core/rake_task'
 
-task :default => [:foodcritic]
+task :default => [:foodcritic, :spec]
 
 FoodCritic::Rake::LintTask.new do |t|
   t.files = [ 'cookbooks' ]
