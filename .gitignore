@@ -1,0 +1,9 @@
+# just because
+.DS_Store
+
+# ruby
+.bundle
+
+# sensitive
+id_rsa
+*.pem
