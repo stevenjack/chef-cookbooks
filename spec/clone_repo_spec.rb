@@ -11,7 +11,7 @@ end
 describe 'clone_repo::responsive_news' do
   let(:chef_run) {
     ChefSpec::Runner.new do |node|
-      node.set['clone_repo'][:github] = 'https://github.com/BBC-News'
+      node.set[:clone_repo][:github] = 'https://github.com/BBC-News'
     end.converge(described_recipe)
   }
 
