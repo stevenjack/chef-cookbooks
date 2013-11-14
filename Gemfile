@@ -1,6 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "rake"
-gem "chef"
-gem "foodcritic"
-gem "chefspec"
+gem 'rake'
+gem 'chef'
+gem 'foodcritic'
+gem 'chefspec'
