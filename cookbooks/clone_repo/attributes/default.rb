@@ -2,4 +2,4 @@
 # Cookbook Name:: clone_repo
 #
 #
-default['clone_repo']['github'] = "https://#{node['GITHUB_TOKEN']}:x-oauth-basic@github.com/BBC-News"
+default[:clone_repo][:github] = "https://#{node[:GITHUB_TOKEN]}:x-oauth-basic@github.com/BBC-News"
