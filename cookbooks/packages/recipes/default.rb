@@ -8,7 +8,7 @@ execute 'update packages' do
 end
 
 node[:packages][:to_install].each do |p|
-  yum_package p do
+  package p do
     action :install
   end
 end
