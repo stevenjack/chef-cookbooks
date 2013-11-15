@@ -8,7 +8,5 @@ case node[:hostname]
 when 'pal.sandbox'
   include_attribute 'packages::pal'
 when 'sandbox.bbc.co.uk'
-  # include_attribute 'packages::pal_base_packages'
+  include_attribute 'packages::aws'
 end
-
-
