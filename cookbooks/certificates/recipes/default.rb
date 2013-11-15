@@ -7,10 +7,10 @@ node[:certificates][:locations].each do |location|
   file location do
     content node[:developer_certificate]
 
-    owner "root"
-    group "root"
+    owner 'root'
+    group 'root'
 
-    mode "0600"
+    mode '0600'
 
     action :create_if_missing
   end

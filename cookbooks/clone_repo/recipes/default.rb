@@ -3,4 +3,4 @@
 # Recipe:: default
 #
 
-package "git-core"
+package 'git-core'

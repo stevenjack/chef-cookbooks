@@ -3,8 +3,8 @@
 # Recipe:: default
 #
 
-execute "update packages" do
-  command "yum -y update"
+execute 'update packages' do
+  command 'yum -y update'
 end
 
 node[:packages][:to_install].each do |p|
