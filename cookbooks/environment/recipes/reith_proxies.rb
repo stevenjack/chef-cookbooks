@@ -3,6 +3,6 @@
 # Recipe:: reith_proxies
 #
 
-execute "reithproxies off" do
+execute 'reithproxies off' do
   command '/usr/sbin/reithproxies off'
 end
