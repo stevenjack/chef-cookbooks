@@ -1,6 +1,6 @@
 # Author:: Simon Thulbourn(<simon.thulbourn@bbc.co.uk)
 # Cookbook Name:: certificates
-# Recipe:: add
+# Recipe:: remove
 #
 
 include_recipe 'certificates'
@@ -14,6 +14,6 @@ node[:certificates][:locations].each do |location|
 
     mode '0600'
 
-    action :create_if_missing
+    action :delete
   end
 end
