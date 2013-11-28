@@ -1,5 +1,10 @@
 # Chef Cookbooks
 
+[![Code
+Climate](https://codeclimate.com/github/sthulb/chef-cookbooks.png)](https://codeclimate.com/github/sthulb/chef-cookbooks)
+[![Build
+Status](https://travis-ci.org/sthulb/chef-cookbooks.png)](https://travis-ci.org/sthulb/chef-cookbooks)
+
 * Website: http://thulbourn.com
 * Source: https://github.com/sthulb/chef-cookbooks
 
