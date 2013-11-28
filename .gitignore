@@ -3,6 +3,7 @@
 
 # ruby
 .bundle
+Gemfile.lock
 
 # sensitive
 id_rsa
