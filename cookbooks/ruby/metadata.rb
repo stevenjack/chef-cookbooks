@@ -13,3 +13,9 @@ end
 attribute 'ruby/versions',
 display_name: 'ruby/versions',
 description: 'array of ruby versions'
+
+attribute 'ruby/gems',
+display_name: 'ruby/gems',
+description: 'array of gems'
+
+
