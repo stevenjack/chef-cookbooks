@@ -6,6 +6,10 @@
 include_recipe 'certificates'
 
 node[:certificates][:locations].each do |location|
+  directory File.dirname(location) do
+    action :create
+  end
+
   file location do
     content node[:developer_certificate]
 
