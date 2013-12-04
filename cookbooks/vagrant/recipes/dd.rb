@@ -3,9 +3,10 @@
 # Recipe:: dd
 #
 
-bash 'clean drive' do
-  code <<-EOH
-    dd if=/dev/zero of=/EMPTY bs=1M
-    rm -f /EMPTY
-  EOH
+execute 'dd to EMPTY' do
+  command 'dd if=/dev/zero of=/EMPTY bs=1M'
+end
+
+file '/EMPTY' do
+  action :delete
 end
