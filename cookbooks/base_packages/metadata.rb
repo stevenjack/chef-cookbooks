@@ -3,7 +3,7 @@ description       'installs base packages'
 maintainer        'Simon Thulbourn'
 maintainer_email  'simon.thulbourn@bbc.co.uk'
 license           'MIT'
-version           '1.0.0'
+version           '1.1.0'
 recipe            'base_packages', 'install base packages'
 
 %w{centos amazon}.each do |os|

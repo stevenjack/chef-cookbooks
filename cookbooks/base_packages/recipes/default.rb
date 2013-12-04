@@ -7,8 +7,8 @@ execute 'update base packages' do
   command 'yum -y update'
 end
 
-node[:packages][:base].each do |package|
-  rpm = File.basename(package[:url])
+node[:base_packages][:packages].each do |package|
+  rpm = package[:name]
   url = package[:url]
   postflight = package[:postflight] unless !package.has_key?(:postflight)
 

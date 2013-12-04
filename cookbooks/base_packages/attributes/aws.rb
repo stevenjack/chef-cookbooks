@@ -4,9 +4,11 @@
 
 default[:base_packages][:packages] = [
   {
+    :name => 'bbc-sandbox6-base-8-3.noarch.rpm',
     :url => 'https://repo.dev.bbc.co.uk/tools/infrastructure/sandbox6/trunk/ext/bbc-sandbox6-base-8-3.noarch.rpm'
   },
   {
+    :name => 'epel-release-6-5.noarch.rpm',
     :url => 'https://repo.dev.bbc.co.uk/tools/infrastructure/sandbox6/trunk/ext/epel-release-6-5.noarch.rpm'
   }
 ]
