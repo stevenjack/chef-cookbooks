@@ -1,0 +1,5 @@
+# Intel Corporation 82545EM Gigabit Ethernet Controller (Copper)
+DEVICE=eth0
+BOOTPROTO=dhcp
+DHCPCLASS=
+ONBOOT=yes
