@@ -13,8 +13,9 @@ end
 
 version = File.read('/root/.vbox_version')
 
-execute 'download additions' do
-  command "curl -L http://download.virtualbox.org/virtualbox/#{version}/VBoxGuestAdditions_#{version}.iso -o /root/VBoxGuestAdditions_#{version}.iso"
+remote_file 'download additions' do
+  source "http://download.virtualbox.org/virtualbox/#{version}/VBoxGuestAdditions_#{version}.iso"
+  path "/root/VBoxGuestAdditions_#{version}.iso"
 end
 
 execute 'mount additions' do
