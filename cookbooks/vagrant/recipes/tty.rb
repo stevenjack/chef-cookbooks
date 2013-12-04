@@ -3,6 +3,6 @@
 # Recipe:: tty
 #
 
-execute "disable requiretty" do
+execute 'disable requiretty' do
   command "sed -i 's/^Defaults\s*requiretty/# Defaults requiretty/' /etc/sudoers"
 end

@@ -3,7 +3,7 @@
 # Recipe:: dd
 #
 
-bash "clean drive" do
+bash 'clean drive' do
   code <<-EOH
     dd if=/dev/zero of=/EMPTY bs=1M
     rm -f /EMPTY

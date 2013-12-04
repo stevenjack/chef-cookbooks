@@ -3,13 +3,13 @@
 # Recipe:: nfs
 #
 
-package "nfs-utils"
-package "nfs-utils-lib"
+package 'nfs-utils'
+package 'nfs-utils-lib'
 
-service "portmap" do
+service 'portmap' do
   action [:enable, :start]
 end
 
-service "nfs" do
+service 'nfs' do
   action [:enable, :start]
 end

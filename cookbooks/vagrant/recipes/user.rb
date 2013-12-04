@@ -3,13 +3,13 @@
 # Recipe:: user
 #
 
-user "vagrant" do
+user 'vagrant' do
   action :create
 
-  home "/home/vagrant"
+  home '/home/vagrant'
 end
 
-bash "password" do
+bash 'password' do
   code <<-EOH
     echo vagrant:vagrant | chpasswd
   EOH

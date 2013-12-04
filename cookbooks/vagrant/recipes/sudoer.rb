@@ -3,15 +3,15 @@
 # Recipe:: sudoer
 #
 
-package "sudo"
+package 'sudo'
 
-bash "su" do
+bash 'su' do
   code <<-EOH
-    echo \"vagrant ALL=(ALL) NOPASSWD: ALL\" >> /etc/sudoers
+    echo \'vagrant ALL=(ALL) NOPASSWD: ALL\' >> /etc/sudoers
   EOH
 end
 
-file "/etc/sudoers" do
+file '/etc/sudoers' do
   mode 00440
   action :touch
 end
