@@ -1,0 +1,6 @@
+[virtualbox]
+name=virtualbox
+baseurl=http://download.virtualbox.org/virtualbox/rpm/rhel/5.8/x86_64/
+enabled=1
+gpgcheck=1
+gpgkey=http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc
