@@ -1,6 +1,7 @@
 # Author:: Simon Thulbourn(<simon.thulbourn@bbc.co.uk)
 # Cookbook Name:: base_packages
 #
+#
 
 default[:base_packages][:packages] = [
   {

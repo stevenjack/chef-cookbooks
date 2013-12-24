@@ -3,8 +3,11 @@
 #
 
 default[:base_packages][:packages] = []
+default[:base_packages][:yum_packages] = []
 
 case node[:hostname]
+when 'pal.docker.sandbox'
+  include_attribute 'base_packages::docker'
 when 'pal.sandbox'
   include_attribute 'base_packages::pal'
 when 'sandbox.bbc.co.uk'
