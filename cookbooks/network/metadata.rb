@@ -4,8 +4,8 @@ maintainer        'Steven Jack'
 maintainer_email  'stevenmajack@gmail.com'
 license           'MIT'
 version           '1.0.0'
-recipe            'default'
+recipe            'default', 'Adds the default networking config'
 
-%w{centos amazon}.each do |os|
+%w{centos}.each do |os|
   supports os
 end
