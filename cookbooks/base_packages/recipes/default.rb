@@ -38,7 +38,7 @@ end
 
 
 node[:base_packages][:yum_packages].each do |package|
-  yum_package package do
+  yum_package package.name do
     action :install
   end
 end
