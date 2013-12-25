@@ -3,10 +3,7 @@
 #
 #
 
-include_attribute 'base_packages::pal'
+include_attribute 'packages::pal'
 
-default[:base_packages][:yum_packages] = [
-  {
-    :name => 'phantomjs'
-  }
-]
+default[:pacakges] << 'phantomjs'
+default[:pacakges] << 'git-core'

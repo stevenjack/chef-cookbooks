@@ -35,11 +35,3 @@ node[:base_packages][:packages].each do |package|
     only_if postflight
   end
 end
-
-
-
-node[:base_packages][:yum_packages].each do |package|
-  execute 'Install extra yum packages' do
-    command "yum -y install #{package.name}"
-  end
-end
