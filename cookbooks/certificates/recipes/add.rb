@@ -18,6 +18,6 @@ node[:certificates][:locations].each do |location|
 
     mode '0600'
 
-    action :create_if_missing
+    content IO.read("/tmp/dev.bbc.co.uk.pem")
   end
 end
