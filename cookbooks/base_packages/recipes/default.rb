@@ -37,8 +37,9 @@ node[:base_packages][:packages].each do |package|
 end
 
 
+
 node[:base_packages][:yum_packages].each do |package|
-  yum_package package.name do
-    action :install
+  execute 'Install extra yum packages' do
+    command "yum -y install #{package.name}"
   end
 end
