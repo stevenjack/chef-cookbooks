@@ -5,5 +5,5 @@
 
 include_attribute 'packages::pal'
 
-default[:pacakges] << 'phantomjs'
-default[:pacakges] << 'git-core'
+default[:pacakges][:to_install] << 'phantomjs'
+default[:pacakges][:to_install] << 'git-core'
