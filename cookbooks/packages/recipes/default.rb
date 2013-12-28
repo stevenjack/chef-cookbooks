@@ -8,7 +8,15 @@ execute 'update packages' do
 end
 
 node[:packages][:to_install].each do |p|
-  package p do
-    action :install
+
+  if !p.is_a? String
+    execute "Install package manually" do
+      command "yum install -y #{p.name} #{p.options}"
+    end
+  else
+    package p do
+      action :install
+    end
   end
+
 end
