@@ -10,4 +10,3 @@ when 'pal.sandbox'
 when 'sandbox.bbc.co.uk'
   include_attribute 'certificates::aws'
 end
-

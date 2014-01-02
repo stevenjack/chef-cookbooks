@@ -5,6 +5,6 @@
 
 node[:services][:services].each do |s|
   service s do
-    action [:enable, :restart]
+    action [:enable]
   end
 end

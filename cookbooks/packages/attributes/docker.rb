@@ -4,11 +4,10 @@
 #
 
 default[:packages][:to_install] = [
-  {'name' => 'bbc-pal-sandbox-packages', 'options' => '--skip-broken'},
   'bbc-pal-sandbox-packages',
   'mod_data',
   'mod_ssl',
-  {'name' => 'mod_image_hcef', 'options' => '--skip-broken'},
+  'mod_image_hcef',
   'bbc-pal-library-micro',
   'bbc-pal-library-micro-devel',
   'nodejs',

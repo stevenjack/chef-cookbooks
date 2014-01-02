@@ -5,6 +5,8 @@
 default[:services][:services] = []
 
 case node[:hostname]
+when 'docker'
+  include_attribute 'services::docker'
 when 'pal.sandbox'
   include_attribute 'services::pal'
 end

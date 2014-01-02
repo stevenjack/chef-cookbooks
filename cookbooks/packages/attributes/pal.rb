@@ -3,6 +3,7 @@
 #
 
 default[:packages][:to_install] = [
+  'bbc-pal-sandbox-packages',
   'mod_data',
   'mod_ssl',
   'mod_imagechef',

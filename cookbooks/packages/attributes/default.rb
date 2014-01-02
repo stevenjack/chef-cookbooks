@@ -5,7 +5,7 @@
 default[:packages][:to_install] = []
 
 case node[:hostname]
-when 'docker.sandbox'
+when 'docker'
   include_attribute 'packages::docker'
 when 'pal.sandbox'
   include_attribute 'packages::pal'

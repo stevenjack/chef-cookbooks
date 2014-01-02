@@ -36,3 +36,11 @@ node[:base_packages][:packages].each do |package|
   end
 
 end
+
+
+case node[:hostname]
+  when 'docker'
+  execute 'Exclude zenoss package for docker build' do
+    command "echo 'exclude=*.i386 *.i586 *.i686 python*el5_5.3 zenoss' >> /etc/yum.conf"
+  end
+end
