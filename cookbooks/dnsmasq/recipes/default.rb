@@ -13,7 +13,7 @@ end
 
 template "/etc/dnsmasq.d/0hosts" do
   source "0hosts.erb"
-  mode 0440
+  mode 0644
   owner "root"
   group "root"
   variables({
@@ -21,9 +21,9 @@ template "/etc/dnsmasq.d/0hosts" do
   })
 end
 
-template "/etc/resolv.dnsmasq.conf" do
-  source "resolv.dnsmasq.conf.erb"
-  mode 0440
+template "/etc/resolv.dnsmasq" do
+  source "resolv.dnsmasq.erb"
+  mode 0644
   owner "root"
   group "root"
   variables({
